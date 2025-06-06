@@ -150,6 +150,11 @@ venv.bak/
 # mkdocs documentation
 /site
 
+
+.python-version
+
+pyproject.tomls
+
 # mypy
 .mypy_cache/
 .dmypy.json
