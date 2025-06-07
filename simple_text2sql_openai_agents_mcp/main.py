@@ -1,9 +1,8 @@
 from pydantic import BaseModel, Field
-from typing import Optional, List, Dict, Any
+from typing import Optional, List, Any
 from dotenv import load_dotenv
 import agentops
 import os
-import aiosqlite
 
 import time
 import asyncio
@@ -28,9 +27,7 @@ set_tracing_disabled(disabled=True)
 load_dotenv()
 
 MCP_PORT = int(os.getenv("MCP_PORT", "8322"))
-AGENTS_API_KEY = str(
-    os.getenv("AGENTS_API_KEY", "80fb39f0-d616-41d6-a350-359e48e21ed6")
-)
+AGENTS_API_KEY = str(os.getenv("AGENTS_API_KEY", ""))
 
 agentops.init(api_key=AGENTS_API_KEY)
 

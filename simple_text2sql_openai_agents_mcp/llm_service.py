@@ -29,7 +29,7 @@ external_model = OpenAIChatCompletionsModel(
 
 
 # DASHSCOPE_BASE_URL = "https://api.deepseek.com/v1"
-# DASHSCOPE_API_KEY = "sk-989c0be6ea404f9982ce391f21c0b563"
+# DASHSCOPE_API_KEY = "YOUR_API_KEY"
 
 # external_client = AsyncOpenAI(
 #     api_key=DASHSCOPE_API_KEY,
